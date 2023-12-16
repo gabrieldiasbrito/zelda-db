@@ -1,0 +1,31 @@
+.page-404{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 50px;
+    text-align: left;
+    width: 80%;
+}
+
+.page-404 h3{
+    color: var(--contrast);
+}
+
+.link-404{
+    color: var(--contrast);
+    font-weight: bold;
+}
+
+@media (max-width:760px){
+    
+    .page-404{
+        display: block;
+        text-align: center;
+        padding-top: 20px;
+    }
+
+    .page-404 img{
+        width: 30%;
+    }
+}

@@ -17,6 +17,11 @@ a{
     color: black;
 }
 
+a:hover{
+    color: var(--contrast);
+    transition: all ease .3s;
+}
+
 .page{
     margin: 60px auto;
     width: 100%;

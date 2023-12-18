@@ -3,9 +3,8 @@
 :root{
     font-family: 'Noto Sans JP', sans-serif;
     --principal: #FDFEFE;
-    --second: #F0F3F4;
+    --second: #dbe1e2;
     --contrast: #32bfe9;
-    background-color: var(--second);
 }
 
 *{
@@ -19,6 +18,7 @@ a{
 
 a:hover{
     color: var(--contrast);
+    font-weight: bold;
     transition: all ease .3s;
 }
 
@@ -26,5 +26,4 @@ a:hover{
     margin: 60px auto;
     width: 100%;
     max-width: 1280px;
-    background-color: var(--principal);
 }

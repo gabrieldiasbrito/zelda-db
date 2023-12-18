@@ -1,6 +1,6 @@
 .navbar{
     display: flex;
-    background-color: var(--principal);
+    background-image: url("../../img/pattern.png");
     height: 60px;
     align-items: center;
     justify-content: space-around;
@@ -34,10 +34,6 @@
 }
 
 @media (max-width:760px){
-    .navbar ul li{
-        padding: 0 7px;
-    }
-
     .checkbtn{
         display: block;
     }
@@ -49,16 +45,23 @@
         top: 60px;
         left: 100%;
         text-align: center;
-        backdrop-filter: blur(3px);
         z-index: 100;
         transition: all ease .3s;
+    }
+
+    .navbar ul::after{
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: url('../../img/pattern.png');
+        z-index: -1;
+        filter: blur(3px);
     }
 
     .navbar ul li{
         display: block;
         padding: 15px;
         border-bottom: 1px solid gray;
-        background-color: var(--second);
     }
 
     .navbar ul.open{

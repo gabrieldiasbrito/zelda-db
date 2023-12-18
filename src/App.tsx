@@ -8,7 +8,9 @@ export default function App() {
     <>
       <div>
         <Navbar/>
-        <Outlet/>
+        <div className="page">
+          <Outlet/>
+        </div>
       </div>
     </>
   )

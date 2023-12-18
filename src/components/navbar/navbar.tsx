@@ -1,7 +1,7 @@
 import './navbar.css'
 import { useState } from "react";
 import { GiTriforce } from "react-icons/gi";
-import { IoSearch , IoMenu} from "react-icons/io5";
+import { IoMenu} from "react-icons/io5";
 import { Link } from 'react-router-dom';
 
 export default function Navbar(){
@@ -21,7 +21,6 @@ export default function Navbar(){
                 <li><Link to="">Locais</Link></li>
                 <li><Link to="">Items</Link></li>
             </ul>
-            <Link to="Search"><IoSearch className="icon"/></Link> 
             <IoMenu className={`checkbtn icon`} onClick={() => setIsOpen(!isOpen)}/>
         </header>
     )

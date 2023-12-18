@@ -6,6 +6,8 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Home from './pages/home/home.tsx'
 import Error from './pages/error/error.tsx'
 import Games from './pages/games/games.tsx'
+import { QueryClientProvider } from 'react-query'
+import { queryClient } from './services/queryClient.ts'
 
 const router = createBrowserRouter([
   {
@@ -18,7 +20,7 @@ const router = createBrowserRouter([
         element: <Home/>
       },
       {
-        path:'Games',
+        path:'Games/*',
         element: <Games/>
       }
     ]
@@ -27,6 +29,8 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <RouterProvider router={router}/>
+    <QueryClientProvider client={queryClient}>
+      <RouterProvider router={router}/>
+    </QueryClientProvider>
   </React.StrictMode>,
 )

@@ -1,0 +1,30 @@
+.game-card{
+    text-align: center;
+    width: 500px;
+    list-style: none;
+    background-color: var(--second);
+    padding: 10px;
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+.game-card:hover{
+    background-color: var(--contrast);
+    transition: .3s ease;
+}
+
+.game-card a{
+    text-decoration: none;
+}
+
+.game-card h3:hover{
+    color: var(--principal);
+    transition: .3s ease;
+}
+
+@media (max-width:760px){
+    .game-card{
+        width: 90%;
+    }
+}

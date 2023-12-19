@@ -1,3 +1,7 @@
+.games-container{
+    margin-top: 80px;
+}
+
 .game-card{
     text-align: center;
     width: 500px;

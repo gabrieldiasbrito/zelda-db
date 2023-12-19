@@ -6,6 +6,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Home from './pages/home/home.tsx'
 import Error from './pages/error/error.tsx'
 import Games from './pages/games/games.tsx'
+import Game from './pages/game/game.tsx'
 import { QueryClientProvider } from 'react-query'
 import { queryClient } from './services/queryClient.ts'
 
@@ -20,8 +21,12 @@ const router = createBrowserRouter([
         element: <Home/>
       },
       {
-        path:'Games/*',
+        path:'games',
         element: <Games/>
+      },
+      {
+        path:'games/*',
+        element: <Game/>
       }
     ]
   }

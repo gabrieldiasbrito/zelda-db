@@ -13,7 +13,7 @@ export default function Navbar(){
             <Link to="/"><GiTriforce className="icon"/></Link>
             <ul className={`${isOpen && "open"}`}>
                 <li><Link to="/">Home</Link></li>
-                <li><Link to="Games">Jogos</Link></li>
+                <li><Link to="games">Jogos</Link></li>
                 <li><Link to="">Personagens</Link></li>
                 <li><Link to="">Monstros</Link></li>
                 <li><Link to="">Chefes</Link></li>

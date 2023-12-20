@@ -1,30 +1,26 @@
-# React + TypeScript + Vite
+# Zelda Database (React + TypeScript + Vite)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+O site "Zelda Database" é uma plataforma que consome uma API para fornecer informações sobre os jogos da famosa franquia "The Legend of Zelda". Os usuários podem explorar dados sobre diferentes jogos relacionados ao universo de Zelda.
 
-Currently, two official plugins are available:
+O site utiliza a API pública "ZeldaAPI" para obter dados atualizados e precisos sobre os jogos. A documentação oficial da API pode ser encontrada em https://zeldaapi.org/docs.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1. Recursos Principais:
 
-## Expanding the ESLint configuration
+a. Listagem de Jogos:
+- Endpoint: /games
+- Descrição: Retorna uma lista de todos os jogos da franquia Zelda.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+b. Detalhes de um Jogo Específico:
+- Endpoint: /games/{id}
+- Descrição: Fornece informações detalhadas sobre um jogo específico com base no ID.
+- Exemplo: /games/1 retorna detalhes sobre o primeiro jogo da série.
 
-- Configure the top-level `parserOptions` property like this:
+2. Considerações de Segurança:
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+Todas as requisições à API devem ser feitas usando HTTPS.
+Os endpoints podem exigir autenticação para acessar determinadas funcionalidades.
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+3. Limitações:
+
+A API pode ter limites de taxa para evitar abusos.
+Nem todos os recursos podem estar disponíveis para todos os jogos.

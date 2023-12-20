@@ -4,18 +4,23 @@ O site "Zelda Database" é uma plataforma que consome uma API para fornecer info
 
 O site utiliza a API pública "ZeldaAPI" para obter dados atualizados e precisos sobre os jogos. A documentação oficial da API pode ser encontrada em https://docs.zelda.fanapis.com/docs.
 
-Recursos Principais:
+1. Recursos Principais:
+
 a. Listagem de Jogos:
+- Endpoint: /games
+- Descrição: Retorna uma lista de todos os jogos da franquia Zelda.
 
-Endpoint: /games
-Descrição: Retorna uma lista de todos os jogos da franquia Zelda.
 b. Detalhes de um Jogo Específico:
+- Endpoint: /games/{id}
+- Descrição: Fornece informações detalhadas sobre um jogo específico com base no ID.
+- Exemplo: /games/1 retorna detalhes sobre o primeiro jogo da série.
 
-Endpoint: /games/{id}
-Descrição: Fornece informações detalhadas sobre um jogo específico com base no ID.
-Exemplo: /games/1 retorna detalhes sobre o primeiro jogo da série.
-Considerações de Segurança:
-Todas as requisições à API devem ser feitas usando HTTPS. Os endpoints podem exigir autenticação para acessar determinadas funcionalidades.
+2. Considerações de Segurança:
 
-Limitações:
-A API pode ter limites de taxa para evitar abusos. Nem todos os recursos podem estar disponíveis para todos os jogos.
+Todas as requisições à API devem ser feitas usando HTTPS.
+Os endpoints podem exigir autenticação para acessar determinadas funcionalidades.
+
+3. Limitações:
+
+A API pode ter limites de taxa para evitar abusos.
+Nem todos os recursos podem estar disponíveis para todos os jogos.

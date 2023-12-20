@@ -16,7 +16,9 @@ export default function Games() {
     })
 
     return (
-            <ul className="games-container">
+        <>
+        <br />
+            <ul>
                 {games?.map(item => {
                     return (
                         <li key={item.id} className="game-card">
@@ -27,6 +29,8 @@ export default function Games() {
                     )
                 })}
             </ul>
+        <br />
+        </>
     )
 
 }

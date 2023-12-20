@@ -21,6 +21,8 @@ export default function Game(){
     })
 
     return(
+        <>
+        <br />
         <div className="game-container">
             <Link to={"/games"}>
                 <IoArrowBack className="icon"/>
@@ -34,5 +36,7 @@ export default function Game(){
                 <p><strong>Data de lançamento: </strong>{info?.released_date}</p>
             </div>
         </div>
+        <br />
+        </>
     )
 }

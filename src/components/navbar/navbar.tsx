@@ -14,12 +14,6 @@ export default function Navbar(){
             <ul className={`${isOpen && "open"}`}>
                 <li><Link to="/">Home</Link></li>
                 <li><Link to="games">Jogos</Link></li>
-                <li><Link to="">Personagens</Link></li>
-                <li><Link to="">Monstros</Link></li>
-                <li><Link to="">Chefes</Link></li>
-                <li><Link to="">Dungeons</Link></li>
-                <li><Link to="">Locais</Link></li>
-                <li><Link to="">Items</Link></li>
             </ul>
             <IoMenu className={`checkbtn icon`} onClick={() => setIsOpen(!isOpen)}/>
         </header>

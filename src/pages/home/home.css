@@ -1,0 +1,29 @@
+.home{
+    text-align: center;
+}
+
+.home img{
+    width: 450px;
+    margin: 10px auto;
+    display: flex;
+}
+
+.home button{
+    margin: 20px;
+    font-size: 20px;
+    padding: 10px;
+    border: 0;
+    border-radius: 10px;
+    background-color: var(--contrast);
+}
+
+.home button:hover{
+    color: var(--principal);
+    transition: ease .3s;
+}
+
+@media (max-width:760px){
+    .home img{
+        width: 70%;
+    }
+}

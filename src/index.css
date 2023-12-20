@@ -4,7 +4,8 @@
     font-family: 'Noto Sans JP', sans-serif;
     --principal: #FDFEFE;
     --second: #dbe1e2;
-    --contrast: #32bfe9;
+    --contrast: #b59c64;
+    background-color: var(--second);
 }
 
 *{
@@ -26,4 +27,5 @@ a:hover{
     margin: 60px auto;
     width: 100%;
     max-width: 1280px;
+    background-color: var(--principal);
 }

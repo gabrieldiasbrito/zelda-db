@@ -2,7 +2,7 @@
 
 O site "Zelda Database" é uma plataforma que consome uma API para fornecer informações sobre os jogos da famosa franquia "The Legend of Zelda". Os usuários podem explorar dados sobre diferentes jogos relacionados ao universo de Zelda.
 
-O site utiliza a API pública "ZeldaAPI" para obter dados atualizados e precisos sobre os jogos. A documentação oficial da API pode ser encontrada em https://zeldaapi.org/docs.
+O site utiliza a API pública "ZeldaAPI" para obter dados atualizados e precisos sobre os jogos. A documentação oficial da API pode ser encontrada em https://docs.zelda.fanapis.com/docs.
 
 1. Recursos Principais:
 
